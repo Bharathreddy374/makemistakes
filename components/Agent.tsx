@@ -30,17 +30,17 @@ const Agent = ({userName}:AgentProps) => {
         <div className="card-border">
             <div className="card-content">
                 <Image src="/user-avatar.png" alt="user" width={540} height={540} className='rounded-full object-cover size-[120px]' />
-                {/* {isSpeaking && <span className='animate-speak'/>} */}
+                {isSpeaking && <span className='animate-speak'/>}
                             <h3>{userName}You</h3>
 
             </div>
         </div>
     </div>
         {messages.length > 0 &&(
-            <div className="transcipt-border">
+            <div className="transcript-border">
                 <div className="transcript">
                     <p key={lastMessage} className={cn(
-                        'transition-opacity duration-500 opacity-0','animate-fadeIn opacity-100')}>
+                        'transition-opacity justify-center duration-500 opacity-0','animate-fadeIn opacity-100')}>
                     {lastMessage}
                     </p>
                 </div>
